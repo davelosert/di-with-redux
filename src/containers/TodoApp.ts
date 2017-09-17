@@ -1,5 +1,6 @@
 import {connect} from 'react-redux';
 import {TodoList} from '../components/TodoList';
+import {fetchAllTodos} from '../todo-repository/fetch-todos-thunk';
 
 export function mapStateToProps({loading, todos}) {
   return {
@@ -10,6 +11,7 @@ export function mapStateToProps({loading, todos}) {
 
 export function mapDispatchToProps(dispatch) {
   return {
+    initTodos: () => dispatch(fetchAllTodos())
   };
 }
 
