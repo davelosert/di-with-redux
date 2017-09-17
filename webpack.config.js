@@ -28,6 +28,9 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
 			inject: 'body'
+		}),
+		new webpack.DefinePlugin({
+			MOCK_API: process.env.MOCK_API || false
 		})
 	]
 };
