@@ -7,8 +7,8 @@ The full explanation will be in a blog post which I will link here as soon as I 
 ## How it works
 This app can easily be started in two different modes:
 
-# `npm run start` - Use Data from a real HTTP API Call (using Data from https://jsonplaceholder.typicode.com)
-# `npm run start:mock` - Use Data from a locally created Mock-Array
+* `npm run start` - Use Data from a real HTTP API Call (using Data from https://jsonplaceholder.typicode.com)
+* `npm run start:mock` - Use Data from a locally created Mock-Array
 
 The latter script simply sets an environment-variable which in turn will make webpack pass it to the Application via the `DefinePlugin`.
 The Application then decides based on that Variable which Implementation of the `TodoRepository`-Interface (Mock or HTTP) it will pass as a third argument to all redux-thunks.
