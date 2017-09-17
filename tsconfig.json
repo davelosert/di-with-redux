@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"jsx": "react",
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"noImplicitAny": false,
+		"sourceMap": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"lib": ["es2015", "es2017", "dom"],
+		"target": "ES5"
+	},
+	"typeRoots": [
+		"node_modules/@types"
+	],
+	"types": [
+		"react",
+		"react-dom",
+		"redux"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}
